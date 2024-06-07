@@ -1,0 +1,4 @@
+2024-06-06 07:11:39	[ERR]:	(router.go:33):	Getting unknown closing client : read tcp [::1]:6680->[::1]:53879: wsarecv: An existing connection was forcibly closed by the remote host.
+2024-06-06 11:18:25	[ERR]:	(router.go:36):	Getting unknown closing client : read tcp [::1]:6680->[::1]:53064: wsarecv: An existing connection was forcibly closed by the remote host.
+2024-06-07 06:17:43	[ERR]:	(router.go:36):	Getting unknown closing client : read tcp [::1]:6680->[::1]:55693: wsarecv: An existing connection was forcibly closed by the remote host.
+2024-06-07 06:28:28	[ERR]:	(router.go:36):	Getting unknown closing client : read tcp [::1]:6680->[::1]:55876: wsarecv: An existing connection was forcibly closed by the remote host.
