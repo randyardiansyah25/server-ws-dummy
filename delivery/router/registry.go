@@ -40,8 +40,8 @@ func RegisterHandler(router *gin.Engine) {
 			Title:    "Hanya Test",
 			Body:     "Hello world",
 		}
-		ws.Hub.PushMessage(msg)
-		resp, er := repository.ListenResponse(reqId)
+
+		resp, er := repository.PushMessage(msg)
 		if er != nil {
 			ctx.String(200, er.Error())
 		} else {
@@ -61,8 +61,7 @@ func RegisterHandler(router *gin.Engine) {
 			Title:    "Hanya Test",
 			Body:     "Cek saldo saya berapa",
 		}
-		ws.Hub.PushMessage(msg)
-		resp, er := repository.ListenResponse(reqId)
+		resp, er := repository.PushMessage(msg)
 		if er != nil {
 			ctx.String(200, er.Error())
 		} else {
