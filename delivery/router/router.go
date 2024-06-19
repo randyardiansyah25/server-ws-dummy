@@ -3,7 +3,6 @@ package router
 import (
 	"io"
 	"os"
-	"server-ws-dummy/entities/request"
 	"server-ws-dummy/entities/ws"
 
 	"github.com/gin-gonic/gin"
@@ -12,8 +11,6 @@ import (
 )
 
 func Start() error {
-	//init
-	request.Table = *request.NewTable(30)
 
 	gin.SetMode(gin.ReleaseMode)
 
